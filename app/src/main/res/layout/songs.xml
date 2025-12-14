@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_purple"
+    tools:context=".SongsActivity"
+    tools:deviceIds="tv">
+
+    <TextView
+        android:id="@+id/title_album_name"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/logo_karaoke_small" android:text="@string/album_name_popular_2020"
+        android:textSize="36sp"  android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <ImageView
+        android:id="@+id/logo_karaoke_small"
+        android:layout_width="240dp"  android:layout_height="110dp"
+        android:src="@drawable/karaoke_logo"
+        android:scaleType="fitEnd"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-35dp"
+        android:layout_marginEnd="32dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_album_name"
+        android:layout_marginTop="20dp"
+        android:clipToPadding="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginHorizontal="32dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingHorizontal="16dp"
+            android:background="@drawable/list_rounded_background">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/rounded_song_item"
+                android:padding="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_marginBottom="16dp">
+                <ImageView
+                    android:id="@+id/img_1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/artist_niletto"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:contentDescription="@string/desc_artist_niletto" />
+                <TextView
+                    android:id="@+id/title_1"
+                    android:layout_width="300dp" android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img_1"
+                    android:layout_centerVertical="true"
+                    android:text="@string/song_title_krash"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal"
+                    android:singleLine="true"/>
+                <TextView
+                    android:id="@+id/artist_1"
+                    android:layout_width="300dp" android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/title_1"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="60dp"
+                    android:text="@string/artist_niletto"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal"
+                    android:singleLine="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="03:32"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:onClick="onClickStepsActivity"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/rounded_song_item"
+                android:padding="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_marginBottom="16dp">
+                <ImageView
+                    android:id="@+id/img_2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/artist_habib"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:contentDescription="@string/desc_artist_habib" />
+                <TextView
+                    android:id="@+id/title_2"
+                    android:layout_width="300dp" android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img_2"
+                    android:layout_centerVertical="true"
+                    android:text="@string/song_title_yagoda_malinka_full"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal"
+                    android:singleLine="true"/>
+                <TextView
+                    android:id="@+id/artist_2"
+                    android:layout_width="300dp" android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/title_2"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="60dp"
+                    android:text="@string/artist_habib"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal"
+                    android:singleLine="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="03:51"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/rounded_song_item"
+                android:padding="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_marginBottom="16dp">
+                <ImageView
+                    android:id="@+id/img_3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/artist_klava"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:contentDescription="@string/desc_artist_klava" />
+                <TextView
+                    android:id="@+id/title_3"
+                    android:layout_width="300dp" android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img_3"
+                    android:layout_centerVertical="true"
+                    android:text="@string/song_title_pokinula_chat"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal"
+                    android:singleLine="true"/>
+                <TextView
+                    android:id="@+id/artist_3"
+                    android:layout_width="300dp" android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/title_3"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="60dp"
+                    android:text="@string/artist_klava_koka"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal"
+                    android:singleLine="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="03:23"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/rounded_song_item"
+                android:padding="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_marginBottom="16dp">
+                <ImageView
+                    android:id="@+id/img_4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/artist_egor"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:contentDescription="@string/desc_artist_egor" />
+                <TextView
+                    android:id="@+id/title_4"
+                    android:layout_width="300dp" android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img_4"
+                    android:layout_centerVertical="true"
+                    android:text="@string/song_title_pikachu"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal"
+                    android:singleLine="true"/>
+                <TextView
+                    android:id="@+id/artist_4"
+                    android:layout_width="300dp" android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/title_4"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="60dp"
+                    android:text="@string/artist_egor_ship"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal"
+                    android:singleLine="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="03:46"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/rounded_song_item"
+                android:padding="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_marginBottom="16dp">
+                <ImageView
+                    android:id="@+id/img_5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/artist_dabro"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:contentDescription="@string/desc_artist_dabro" />
+                <TextView
+                    android:id="@+id/title_5"
+                    android:layout_width="300dp" android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img_5"
+                    android:layout_centerVertical="true"
+                    android:text="@string/song_title_yunost"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal"
+                    android:singleLine="true"/>
+                <TextView
+                    android:id="@+id/artist_5"
+                    android:layout_width="300dp" android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/title_5"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="60dp"
+                    android:text="@string/artist_dabro"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal"
+                    android:singleLine="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="03:57"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/rounded_song_item"
+                android:padding="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_marginBottom="16dp">
+                <ImageView
+                    android:id="@+id/img_6"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/artist_habib_2"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:contentDescription="@string/desc_artist_habib" />
+                <TextView
+                    android:id="@+id/title_6"
+                    android:layout_width="300dp" android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img_6"
+                    android:layout_centerVertical="true"
+                    android:text="@string/song_title_grustinka"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal"
+                    android:singleLine="true"/>
+                <TextView
+                    android:id="@+id/artist_6"
+                    android:layout_width="300dp" android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/title_6"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="60dp"
+                    android:text="@string/artist_habib"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal"
+                    android:singleLine="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="03:12"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/rounded_song_item"
+                android:padding="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_marginBottom="16dp">
+                <ImageView
+                    android:id="@+id/img_7"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/artist_gayazovs"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:contentDescription="@string/desc_artist_gayazovs" />
+                <TextView
+                    android:id="@+id/title_7"
+                    android:layout_width="300dp" android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img_7"
+                    android:layout_centerVertical="true"
+                    android:text="@string/song_title_malinovaya_lada"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal"
+                    android:singleLine="true"/>
+                <TextView
+                    android:id="@+id/artist_7"
+                    android:layout_width="300dp" android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/title_7"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="60dp"
+                    android:text="@string/artist_gayazovs"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal"
+                    android:singleLine="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="03:35"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:background="@drawable/rounded_song_item"
+                android:padding="10dp"
+                android:focusable="true"
+                android:clickable="true"
+                android:layout_marginBottom="16dp">
+                <ImageView
+                    android:id="@+id/img_8"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/artist_niletto_2"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="20dp"
+                    android:contentDescription="@string/desc_artist_niletto" />
+                <TextView
+                    android:id="@+id/title_8"
+                    android:layout_width="300dp" android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/img_8"
+                    android:layout_centerVertical="true"
+                    android:text="@string/song_title_lyubimka"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal"
+                    android:singleLine="true"/>
+                <TextView
+                    android:id="@+id/artist_8"
+                    android:layout_width="300dp" android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/title_8"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="60dp"
+                    android:text="@string/artist_niletto"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="normal"
+                    android:singleLine="true"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:text="03:47"
+                    android:textSize="24sp"
+                    android:textColor="@android:color/black" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

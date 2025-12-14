@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">pr9</string>
+    <string name="hint_login">login</string>
+    <string name="hint_password">password</string>
+    <string name="button_sign_in">sign in</string>
+
+    <string name="title_albums">Альбомы</string>
+    <string name="desc_album_detskie_pesni">Детские песни</string>
+    <string name="desc_album_pop_2020">Популярные песни 2020</string>
+    <string name="desc_album_pesni_pobedy">Песни Победы</string>
+    <string name="desc_album_sovrem_detskie">Современные Детские песни</string>
+
+    <string name="song_title_yagoda_malinka">Ягода малинка - ХАБИБ</string>
+    <string name="desc_karaoke_background">Karaoke Background Image</string>
+    <string name="desc_karaoke_logo">Karaoke Logo</string>
+    <string name="song_line_1">Ягода Малинка, оп-оп-оп</string>
+    <string name="song_line_2">Крутит головой, залетает в топ</string>
+
+    <string name="album_name_popular_2020">Самые популярные песни 2020</string>
+    <string name="desc_artist_niletto">Фото NILETTO</string>
+    <string name="song_title_krash">Краш</string>
+    <string name="artist_niletto">NILETTO</string>
+    <string name="desc_artist_habib">Фото ХАБИБ</string>
+    <string name="song_title_yagoda_malinka_full">Ягода малинка</string>
+    <string name="artist_habib">ХАБИБ</string>
+    <string name="desc_artist_klava">Фото Клава Кока</string>
+    <string name="song_title_pokinula_chat">Покинула чат</string>
+    <string name="artist_klava_koka">Клава Кока</string>
+    <string name="desc_artist_egor">Фото ЕГОР ШИП</string>
+    <string name="song_title_pikachu">Пикачу</string>
+    <string name="artist_egor_ship">ЕГОР ШИП</string>
+    <string name="desc_artist_dabro">Фото DABRO</string>
+    <string name="song_title_yunost">Юность</string>
+    <string name="artist_dabro">DABRO</string>
+    <string name="song_title_grustinka">Грустинка</string>
+    <string name="song_title_malinovaya_lada">Малиновая Лада</string>
+    <string name="artist_gayazovs">GAYAZOVS BROTHERS</string>
+    <string name="song_title_lyubimka">Любимка</string>
+    <string name="desc_artist_gayazovs">Фото GAYAZOVS BROTHERS</string>
+</resources>
